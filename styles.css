@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.half-screen1 {
+    flex: 1;
+    background-color: #CFFF04;
+
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center;
+}
+
+.half-screen2 {
+    flex: 1;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center;
+    flex-direction: column;
+
+}
+#snake{
+    transform: rotate(180deg);
+    width: 200px;
+}
+#lion{
+    width: 200px;
+    margin: 40px;
+}
+.scoreboard{
+    background-color: #1B244A;
+    width: 10rem;
+    display: flex;
+    border-radius:1rem ;
+}
+#score2{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 3rem;
+    color: #F94F6D;
+}
+
+
