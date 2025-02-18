@@ -11,10 +11,17 @@ body, html {
     height: 100%;
     flex-direction: column;
 }
+.active-player{
+    background-color: #CFFF04;
+
+}
+.inactive-player{
+    background-color: whitesmoke;
+
+}
 
 .half-screen1 {
     flex: 1;
-    background-color: #CFFF04;
 
     display: flex;
     align-items: center; /* Vertically center */
@@ -25,7 +32,6 @@ body, html {
 
 .half-screen2 {
     flex: 1;
-    background-color: whitesmoke;
     display: flex;
     align-items: center; /* Vertically center */
     justify-content: start;
@@ -80,11 +86,17 @@ margin: auto;
     border: #7950f2 solid 0.5rem;
 
 }
-.button-actions2 p{
+.button-actions2 p {
     font-size: 3rem;
     font-weight: bolder;
     margin:-1rem auto auto auto;
 }
+.button-actions1 p {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin:-1rem auto auto auto;
+}
+
 
 .button-actions1 .buttons{
     margin-top: 60px;
@@ -106,6 +118,40 @@ margin: auto;
     font-size: 3rem;
     font-weight: bolder;
 margin:-1rem auto auto auto;
+}
+/*modal css*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 30vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 

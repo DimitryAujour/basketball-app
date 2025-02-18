@@ -12,7 +12,7 @@
 <body>
 <div class="container">
 
-    <div class="half-screen1">
+    <div class="half-screen1 active-player" id="side1">
         <div class="button-actions2">
 
             <button class="buttons" id="button4">Outside the 3-point line</button>
@@ -20,7 +20,7 @@
             <button class="buttons" id="button6">Free Throws</button>
             <p>50%</p>
             <p>70%</p>
-            <p>95%</p>
+            <p>90%</p>
 
         </div>
 
@@ -32,7 +32,7 @@
 
     </div>
 
-    <div class="half-screen2">
+    <div class="half-screen2 inactive-player" id="side2">
 
         <img src="./images/lion.png" id="lion" alt="">
         <div class="scoreboard">
@@ -40,15 +40,22 @@
         </div>
         <div class="button-actions1">
 
-            <button class="buttons" id="button1">Outside the 3-point line</button>
+            <button class="buttons" id="button1" >Outside the 3-point line</button>
             <button class="buttons" id="button2">Inside the 3-point line</button>
             <button class="buttons" id="button3">Free Throws</button>
             <p>50%</p>
             <p>70%</p>
-            <p>95%</p>
+            <p>90%</p>
 
         </div>
     </div>
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winnerMessage"></p>
+        </div>
+    </div>
 </div>
+<script type="module" src="./js/script.js"></script>
 </body>
 </html>
