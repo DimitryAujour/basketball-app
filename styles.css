@@ -18,7 +18,9 @@ body, html {
 
     display: flex;
     align-items: center; /* Vertically center */
-    justify-content: center;
+    justify-content: end;
+    flex-direction: column;
+
 }
 
 .half-screen2 {
@@ -26,28 +28,84 @@ body, html {
     background-color: whitesmoke;
     display: flex;
     align-items: center; /* Vertically center */
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
+
 
 }
 #snake{
     transform: rotate(180deg);
     width: 200px;
+    margin: 40px 0 100px 0;
 }
 #lion{
     width: 200px;
-    margin: 40px;
+    margin: 100px 0 40px 0;
 }
 .scoreboard{
     background-color: #1B244A;
-    width: 10rem;
+    width: 15rem;
+    height: 9rem;
     display: flex;
     border-radius:1rem ;
 }
-#score2{
+#score2,#score1{
+margin: auto;
     font-family: 'Cursed Timer ULiL', sans-serif;
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: #F94F6D;
+
+}
+#score1{
+    transform: rotate(180deg);
+
+}
+.button-actions1  {
+    font-family: Lexend, serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows of equal height */
+    gap: 40px; /* Space between items */
+}
+.button-actions2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows of equal height */
+    gap: 40px; /* Space between items */
+    transform: rotate(180deg);
+
+}
+.button-actions2 .buttons{
+    margin-top: 60px;
+    border: #7950f2 solid 0.5rem;
+
+}
+.button-actions2 p{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin:-1rem auto auto auto;
+}
+
+.button-actions1 .buttons{
+    margin-top: 60px;
+    border: darkorange solid 0.5rem;
+
+}
+.buttons{
+    background-color:transparent;
+    font-family: Lexend, serif;
+
+    border-radius:1rem ;
+    padding: 10px;
+    width: 15rem;
+    height: 9rem;
+    font-size: 2rem;
+}
+
+.button-actions1 p{
+    font-size: 3rem;
+    font-weight: bolder;
+margin:-1rem auto auto auto;
 }
 
 
